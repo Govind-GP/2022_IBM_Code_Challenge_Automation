@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en" class="" style="height: auto;">
+ <head>
+    <meta charset="utf-8">
+  	<title>Details</title>
+    
+    
+  </head> 
+  <style>
+  
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 47%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=radio], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 53%;
+  justify-content: left;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #208a26;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+body{
+    background-color: antiquewhite;
+}
+</style>
+<body >
+    <form name="submit" id="submit" action="#" method="post">
+        <label for="fname"><b>Name</b></label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+
+        <br>
+
+        <label for="dob"><b>Date of Birth</b></label>
+        <input type="date" id="dob" name="dob">
+
+        <br>
+
+        <B>Gender  </B><br>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="M" />
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="F" />
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="O" />
+        <br>
+
+
+        <b>Minority  </b><br>
+        <br>
+        <label for="yes">YES</label>
+        <input type="radio" id="yes" name="minority" value="YES" />
+        <label for="no">NO</label>
+        <input type="radio" id="no" name="minority" value="NO" />
+        <br>
+
+        <b>Caste  </b><br>
+        <br>
+        <label for="general">General</label>
+        <input type="radio" id="general" name="caste" value="General" />
+        <label for="obc">OBC</label>
+        <input type="radio" id="obc" name="caste" value="OBC" />
+        <label for="scst">SC/ST</label>
+        <input type="radio" id="scst" name="caste" value="SC/ST" />
+        <br>
+
+        <label for="income"><b>Income</b></label>
+        <input type="text" id="income" name="income" placeholder="Your income...">
+        <br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
